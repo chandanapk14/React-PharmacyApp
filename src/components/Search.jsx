@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import Navbar from './Navbar'
 
 const Search = () => {
     const [data, changeData] = useState(
@@ -39,6 +40,7 @@ const Search = () => {
     }
     return (
         <div>
+            <Navbar/><br></br>
             <h3 align="center">SEARCH MEDICINE</h3><br></br>
             <div className="container">
                 <div className="row">
@@ -61,7 +63,7 @@ const Search = () => {
             </div>
             <div className="row">
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <table class="table">
+                    <table class="table table-bordered">
                         <thead>
                             <tr>
                                 <th scope="col">Username</th>
